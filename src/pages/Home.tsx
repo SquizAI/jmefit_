@@ -202,7 +202,7 @@ function Home() {
               Ready to Transform Your Life?
             </h2>
             <Link
-              to="/train"
+              to="/programs"
               className="inline-flex items-center px-12 py-4 text-lg font-bold rounded-full bg-gradient-to-r from-jme-purple to-purple-700 text-white hover:from-purple-700 hover:to-purple-800 transition-all transform hover:scale-105 uppercase tracking-wide shadow-lg"
             >
               Join Now

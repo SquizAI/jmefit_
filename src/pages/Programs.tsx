@@ -455,7 +455,7 @@ function Programs() {
       {/* SHRED Challenge Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Special Challenge Program</h2>
+          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-jme-cyan via-purple-600 to-jme-purple bg-clip-text text-transparent drop-shadow-lg" style={{textShadow: '0 0 5px rgba(100, 100, 255, 0.3)'}}>Special Challenge Program</h2>
           <p className="text-lg text-gray-400">Transform your body with our intensive 6-week program</p>
         </div>
         <div id="shred-challenge" className="bg-gradient-to-r from-jme-cyan via-jme-purple to-jme-cyan bg-[length:200%_100%] hover:bg-[100%] transition-all duration-500 rounded-2xl text-white p-8 shadow-[0_0_30px_rgba(139,92,246,0.3)] border-4 border-white/30 relative overflow-hidden">
@@ -628,7 +628,7 @@ function Programs() {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-jme-purple/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
           
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold text-white mb-4">Not Sure Which Plan Is Right For You?</h2>
+            <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-jme-cyan via-purple-600 to-jme-purple bg-clip-text text-transparent drop-shadow-lg" style={{textShadow: '0 0 5px rgba(100, 100, 255, 0.3)'}}>Not Sure Which Plan Is Right For You?</h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">Schedule a free consultation with our fitness experts to find the perfect program for your goals and lifestyle.</p>
             <Link
               to="/contact"
@@ -702,7 +702,7 @@ function Programs() {
       {/* FAQ Section */}
       <div id="faq" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mb-16">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-extrabold text-white inline-block mb-6">Frequently Asked Questions</h2>
+          <h2 className="text-5xl font-extrabold inline-block mb-6 bg-gradient-to-r from-jme-cyan via-purple-600 to-jme-purple bg-clip-text text-transparent drop-shadow-lg" style={{textShadow: '0 0 5px rgba(100, 100, 255, 0.3)'}}>Frequently Asked Questions</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">Find answers to common questions about our fitness programs and services</p>
         </div>
         <div className="relative">
