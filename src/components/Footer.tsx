@@ -9,7 +9,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <img 
-              src="/JME_fit_black_purple.png" 
+              src="/JME_fit_purple.png" 
               alt="JMEFit Training"
               className="h-12 w-auto brightness-200 mb-4"
             />

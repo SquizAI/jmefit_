@@ -42,7 +42,7 @@ function Home() {
             </h2>
             <div className="flex flex-col sm:flex-row items-center gap-6">
               <Link
-                to="/train"
+                to="/programs"
                 className="inline-flex items-center justify-center w-full sm:w-auto px-12 py-4 text-lg font-bold rounded-lg bg-gradient-to-r from-jme-cyan to-jme-purple text-white hover:from-jme-purple hover:to-jme-cyan transition-all transform hover:scale-105 uppercase tracking-wide shadow-lg mt-8"
               >
                 Train With Me
