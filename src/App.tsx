@@ -10,7 +10,7 @@ import Blog from './pages/Blog';
 import ShredWaitlist from './pages/ShredWaitlist';
 import MonthlyApp from './pages/MonthlyApp';
 import StandalonePrograms from './pages/StandalonePrograms';
-import ProductSelector from './pages/ProductSelector';
+// ProductSelector import removed
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
@@ -52,7 +52,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/onboarding" element={<Onboarding />} />
               <Route path="/nutrition-programs" element={<NutritionPrograms />} />
-              <Route path="/train" element={<ProductSelector />} />
+              {/* ProductSelector route removed */}
               <Route path="/programs" element={<Programs />} />
               <Route path="/monthly-app" element={<MonthlyApp />} />
               <Route path="/standalone-programs" element={<StandalonePrograms />} />
