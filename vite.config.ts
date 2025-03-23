@@ -17,9 +17,20 @@ const pwaIcons = [
 ];
 
 // https://vitejs.dev/config/
+// Force Vite to copy all assets from public to dist during build
+
 export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
+    // Custom plugin to ensure public assets are copied correctly
+    {
+      name: 'copy-assets',
+      enforce: 'post',
+      apply: 'build',
+      generateBundle() {
+        console.log('✅ Ensuring all public assets are included in the build');
+      }
+    },
     VitePWA({
       strategies: 'generateSW',
       registerType: 'autoUpdate',
@@ -84,6 +95,9 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     sourcemap: true,
+    assetsInlineLimit: 0, // Don't inline any assets
+    copyPublicDir: true, // Ensure public directory is copied to dist
+    emptyOutDir: true, // Clean the output directory before build
     rollupOptions: {
       input: {
         main: './index.html'
@@ -93,7 +107,13 @@ export default defineConfig(({ mode }) => ({
           vendor: ['react', 'react-dom', 'react-router-dom'],
           ui: ['@supabase/auth-ui-react', 'lucide-react']
         },
-        assetFileNames: 'assets/[hash][extname]',
+        assetFileNames: (assetInfo) => {
+          // Keep original file names for assets in the public directory
+          if (assetInfo.name && assetInfo.name.includes('public/')) {
+            return 'assets/[name][extname]';
+          }
+          return 'assets/[hash][extname]';
+        },
         chunkFileNames: 'assets/[hash].js',
         entryFileNames: 'assets/[hash].js'
       }

@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Mail } from 'lucide-react';
+import Images from '../assets/images';
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <img 
-              src="/JME_fit_purple.png" 
+              src={Images.jmeFitPurple} 
               alt="JMEFit Training"
               className="h-12 w-auto brightness-200 mb-4"
             />
