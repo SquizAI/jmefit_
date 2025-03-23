@@ -34,3 +34,5 @@ yarn-error.log*
 
 # PWA
 dev-dist/
+# Local Netlify folder
+.netlify
