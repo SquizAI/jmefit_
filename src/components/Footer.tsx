@@ -10,9 +10,9 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <img 
-              src={Images.jmeFitPurple} 
+              src={Images.jmeFitBlackPurple} 
               alt="JMEFit Training"
-              className="h-12 w-auto brightness-200 mb-4"
+              className="h-28 w-auto mb-4"
             />
             <p className="text-sm text-gray-400">
               Transform your body and mind through expert-guided fitness and nutrition programs.
